@@ -1,1 +1,108 @@
-.footer-main {}
+.footer-main {
+    position: absolute;
+    transform: translate(-50%, -100%);
+    z-index: 50;
+    left: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 50px 115px;
+    max-width: 2000px;
+    width: 100%;
+    margin: auto;
+    color: $color-white;
+
+    &__left {
+        margin: 0 65px 0 0;
+    }
+    &__logo {
+        display: flex;
+        align-items: center;
+        margin: 0 0 40px;
+    }
+    &__copy {
+        font-size: 14px;
+        white-space: nowrap;
+    }
+    &__center {
+        padding: 0 50px;
+        width: 100%;
+        max-width: 875px;
+    }
+    &__phone {
+        font-weight: 600;
+        letter-spacing: 1.8px;
+        color: $color-white;
+        display: flex;
+        align-items: center;
+        margin: 0 0 35px;
+
+        &-str {
+            fill: $color-main;
+            width: 15px;
+            height: 8px;
+            margin: 0 0 0 15px;
+        }
+    }
+}
+
+.menu-bottom {
+    display: flex;
+    justify-content: space-between;
+    margin: 0 0 -20px;
+
+    &__part {
+        display: flex;
+        flex-direction: column;
+    }
+    &__link {
+        color: $color-white;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 1.2;
+        letter-spacing: 1.6px;
+        text-transform: uppercase;
+        position: relative;
+        margin: 0 0 20px;
+
+        &::before {
+            content: '';
+            height: 4px;
+            width: 4px;
+            border-radius: 50%;
+            background-color: $color-main;
+            position: absolute;
+            top: 50%;
+            left: -20px;
+            margin: -2px 0 0;
+        }
+    }
+}
+
+.social-block {
+    display: flex;
+    align-items: center;
+    margin: 0 -8px;
+
+    &__link {
+        width: 66px;
+        height: 66px;
+        background-color: rgba(70, 70, 70, .2);
+        fill: $color-white;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+        margin: 0 8px;
+
+        &:hover {
+            background-color: $color-main;
+        }
+    }
+    &__icon {
+        height: 15px;
+        width: 15px;
+    }
+}

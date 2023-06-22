@@ -1,0 +1,30 @@
+.btn-one {
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 2.1px;
+    text-transform: uppercase;
+    height: 90px;
+    padding: 0 22px 0 37px;
+    border-left: 2px solid;
+    border-top: 2px solid;
+    border-bottom: none;
+    border-right: none;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    &_white {
+        color: $color-white;
+        border-color: $color-white;
+    }
+    &__str {
+        fill: $color-main;
+        width: 15px;
+        margin: 0 0 0 23px;
+        height: 8px;
+    }
+    &:hover {
+        color: $color-main;
+        border-color: $color-main;
+    }
+}

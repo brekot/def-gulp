@@ -1,0 +1,30 @@
+.words-block {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+    z-index: 8;
+    overflow: hidden;
+    pointer-events: none;
+
+    &__word {
+        fill: $color-white;
+        position: absolute;
+        left: 50%;
+
+        &_color {
+            width: 115px;
+            height: 210px;
+            transform: translate(-591px, 0);
+        }
+        &_style {
+            width: 115px;
+            height: 198px;
+            transform: translate(476px, 0);
+        }
+        &_paint {
+            width: 115px;
+            height: 198px;
+            transform: translate(-57px, 0);
+        }
+    }
+}

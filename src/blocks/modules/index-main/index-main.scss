@@ -1,0 +1,73 @@
+.index-main {
+    position: relative;
+	background-color: $bg-main;
+	margin: -100px 0 0;
+
+	&__word {
+
+		&-color {
+			top: 535px;
+		}	
+		&-style {
+			top: 182px;
+		}
+		&-paint {
+			bottom: 40px;
+		}
+	}
+
+	&__slider {
+		position: relative;
+		z-index: 7;
+		padding: 0 0 120px;
+	}
+	&__slide {
+		text-align: center;
+		position: relative;
+	}
+	&__gradient {
+		width: 845px;
+		height: 845px;
+		background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+		position: absolute;
+		left: 50%;
+		transform: translate(-50%,0);
+		top: 77px;
+		z-index: 2;
+	}
+	&__img {
+		position: relative;
+		z-index: 3;
+	}
+	&__logo {
+		position: absolute;
+		z-index: 4;
+		top: 345px;
+		left: 50%;
+		transform: translate(-50%, 0);
+		margin: 0 0 0 -10px;
+	}
+	&__word {
+		color: $color-white;
+		font-weight: 600;
+		letter-spacing: 2.7px;
+		text-transform: uppercase; 
+		position: absolute;
+		z-index: 4;
+		top: 510px;
+		left: 50%;
+		margin: 0 0 0 55px;
+	}
+	&__btn {
+		position: absolute;
+		z-index: 3;
+		top: 610px;
+		left: 50%;
+		width: 100%;
+		max-width: 1560px;
+		padding: 0 50px;
+		transform: translate(-50%, 0);
+		display: flex;
+		justify-content: flex-end;
+	}
+}

@@ -1,0 +1,63 @@
+.line-grid {
+    height: 100%;
+    position: absolute;
+    width: 100%;
+	opacity: .25;
+	z-index: 5;
+	overflow: hidden;
+
+	&::before,
+	&::after,
+	&__one::before,
+	&__one::after,
+	&__two::before,
+	&__two::after {
+		content: "";
+	}
+    &::before,
+    &::after,
+	&__one,
+	&__one::before,
+	&__one::after,
+	&__two::before,
+	&__two::after {
+        height: 100%;
+        width: 1px;
+        position: absolute;
+        left: 50%;
+        background-color: $color-grey1;
+    }
+    &_dark::before,
+    &_dark::after,
+	&_dark &__one,
+	&_dark &__one::before,
+	&_dark &__one::after,
+	&_dark &__two::before,
+	&_dark &__two::after {
+		background-color: $color-grey2;
+	}
+    &::before {
+        margin: 0 0 0 -843px;
+    }
+    &::after {
+        margin: 0 0 0 843px;
+    }
+    &__one {
+
+        &::before {
+            margin: 0 0 0 -534px;
+        }
+        &::after {
+            margin: 0 0 0 534px;
+        }
+    }
+    &__two {
+
+        &::before {
+            margin: 0 0 0 -423px;
+        }
+        &::after {
+            margin: 0 0 0 423px;
+        }
+    }
+}

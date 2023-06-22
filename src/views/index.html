@@ -4,13 +4,20 @@
         <meta charset="utf-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <title>Derufa</title>
-        <meta name="theme-color" content="#fff">
-        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no" />
-
+        <meta name="theme-color" content="#D2286F">
+        <meta name="viewport" content="width=device-width,initial-scale=1,shrink-to-fit=no">
         <link rel="stylesheet" href="local/styles/main.css">
     </head>
     <body>
+        <!-- bitrix panel here -->
         @@include("../blocks/modules/header/header.html")
+        <div class="work-area">
+            <!-- header finish -->
+            @@include("../blocks/modules/index-main/index-main.html")
+            @@include("../blocks/modules/index-about/index-about.html")
+            @@include("../blocks/modules/index-question/index-question.html")
+            <!-- footer start -->
+        </div>
         @@include("../blocks/modules/footer/footer.html")
         <script src="local/js/vendor.js"></script>
         <script src="local/js/main.js"></script>

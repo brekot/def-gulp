@@ -4899,7 +4899,7 @@ bem-tools-create@bem-tools/bem-tools-create:
     stylelint-config-standard-scss: ^3.0.0
     stylelint-order: ^5.0.0
     stylelint-selector-bem-pattern: ^2.1.1
-    swiper: ^8.1.4
+    swiper: ^9.4.1
     webpack: ^5.70.0
     webpack-stream: ^7.0.0
     yargs: ^17.3.1
@@ -5100,15 +5100,6 @@ bem-tools-create@bem-tools/bem-tools-create:
   version: 0.1.2
   resolution: "dom-walk@npm:0.1.2"
   checksum: 19eb0ce9c6de39d5e231530685248545d9cd2bd97b2cb3486e0bfc0f2a393a9addddfd5557463a932b52fdfcf68ad2a619020cd2c74a5fe46fbecaa8e80872f3
-  languageName: node
-  linkType: hard
-
-"dom7@npm:^4.0.4":
-  version: 4.0.4
-  resolution: "dom7@npm:4.0.4"
-  dependencies:
-    ssr-window: ^4.0.0
-  checksum: b38604f74e915b4d05b6634f9ff239a708c468180f498a28ff67f2a61233697d9bd7192703b788a24541c3591e7f1a6e83a2cbf70bc871a85e033f82e19abc31
   languageName: node
   linkType: hard
 
@@ -13482,7 +13473,7 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"ssr-window@npm:^4.0.0, ssr-window@npm:^4.0.2":
+"ssr-window@npm:^4.0.2":
   version: 4.0.2
   resolution: "ssr-window@npm:4.0.2"
   checksum: df182600927f4f3225224cf8c02338ea637c9750519505bbfb9a9236741a2a7ec088386fb948bca7b447b8303d9109e7dc7672e3de041c79ac2a0e03665af7d2
@@ -14140,13 +14131,12 @@ bem-tools-create@bem-tools/bem-tools-create:
   languageName: node
   linkType: hard
 
-"swiper@npm:^8.1.4":
-  version: 8.1.4
-  resolution: "swiper@npm:8.1.4"
+"swiper@npm:^9.4.1":
+  version: 9.4.1
+  resolution: "swiper@npm:9.4.1"
   dependencies:
-    dom7: ^4.0.4
     ssr-window: ^4.0.2
-  checksum: d635748ef1de88d6c112b8f04f3500a94a787ca64c405c48e5c02c3a18235b373fe56f26d4b9d5ffa8e2961c03129cb9993e003374988a1c54d145a605ab7b10
+  checksum: 1180b3b766f25cbe636fafbb56adbddf8a240077c504a335a62d1773f4452df1bd9ca09bccfe86478c3b9401879c4e8f7ed3824e74299f8b48953e8fc7f08bc3
   languageName: node
   linkType: hard
 

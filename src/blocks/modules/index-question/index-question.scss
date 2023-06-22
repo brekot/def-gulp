@@ -1,0 +1,53 @@
+.index-question {
+    background: url(../img/index-question/bg.jpg) no-repeat no-repeat center / cover;
+    height: 1070px;
+    position: relative;
+
+    &::before {
+        content: '';
+        opacity: .85;
+        background: $bg-main; 
+        position: absolute;
+        left: 0;
+        right: 0;
+        top: 0;
+        bottom: 0;
+    }
+
+	&__word {
+
+		&-color {
+			top: 565px;
+		}	
+		&-style {
+			top: 160px;
+		}
+	}
+
+    &__d {
+        position: absolute;
+        z-index: 2;
+        left: 50%;
+        transform: translate(-50%, 0);
+        top: 210px;
+    }
+    &__text {
+        color: $color-white;
+        font-size: 45px;
+        font-weight: 600;
+        letter-spacing: 4.5px;
+        text-transform: uppercase;
+        text-align: center;
+        position: absolute;
+        z-index: 5;
+        top: 410px;
+        left: 0;
+        right: 0;
+    }
+    &__btn {
+        position: absolute;
+        z-index: 5;
+        top: 530px;
+        left: 50%;
+    }
+}
