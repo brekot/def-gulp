@@ -1,0 +1,73 @@
+.nav-index-line {
+    position: fixed;
+    z-index: 50;
+    top: 50%;
+    left: 50px;
+    transform: rotate(-90deg) translate(-50%, 0);
+    transform-origin: left;
+    display: flex;
+    align-items: center;
+    color: $bg-main;
+
+    &__str {
+        width: 15px;
+        height: 8px;
+        fill: $bg-main;
+        transform: rotate(180deg);
+        margin: 0 25px 0 0;
+    }
+    &__count {
+        font-size: 12px;
+        font-weight: 700;
+        letter-spacing: .6px;
+        text-transform: uppercase; 
+
+        &-this {
+            color: $color-main;
+        }
+    }
+    &__line {
+        background-color: $color-grey3;
+        width: 187px;
+        height: 1px;
+        margin: 0 20px;
+        position: relative;
+
+        &::before {
+            content: '';
+            background-color: $color-main;
+            position: absolute;
+            top: 0;
+            left: 50%;
+            right: 0;
+            bottom: 0;
+        }
+        &::after {
+            content: "";
+            background-color: $color-main;
+            position: absolute;
+            height: 6px;
+            width: 6px;
+            border-radius: 50%;
+            left: 50%;
+            top: -2px;
+        }
+    }
+    &__name {
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 1.8px;
+        text-transform: uppercase; 
+    }
+
+    &_reverse {
+        color: $color-white;
+    }
+    &_reverse &__str {
+        fill: $color-white;
+    }
+    &_reverse &__line {
+        opacity: .45;
+        background-color: $color-grey2;
+    }
+}
