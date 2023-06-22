@@ -1,8 +1,15 @@
-<a href="javascript:;">Страница</a>
+<a href="https://brekot.github.io/def-gulp/">Главная страница</a>
 
 <hr>
 
 Папка /docs - для разработчика. Содержит готовые файлы верски. Остальные файлы и папки служебные.
+
+<hr>
+
+<b>Подключены в JS:</b><br>
+<ul>
+    <li>Swiper - для слайдеров (https://swiperjs.com/)</li>
+</ul>
 
 <hr>
 
