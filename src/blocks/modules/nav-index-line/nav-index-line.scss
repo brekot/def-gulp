@@ -70,4 +70,11 @@
         opacity: .45;
         background-color: $color-grey2;
     }
+
+    @include media-breakpoint-down(md)
+	{
+        & {
+            display: none;
+        }
+    }
 }

@@ -19,11 +19,12 @@
 	&__slider {
 		position: relative;
 		z-index: 7;
-		padding: 0 0 120px;
+		padding: 0 0 125px;
 	}
 	&__slide {
 		text-align: center;
 		position: relative;
+		overflow: hidden;
 	}
 	&__gradient {
 		width: 845px;
@@ -38,6 +39,8 @@
 	&__img {
 		position: relative;
 		z-index: 3;
+		display: block;
+		margin: auto;
 	}
 	&__logo {
 		position: absolute;
@@ -45,7 +48,21 @@
 		top: 345px;
 		left: 50%;
 		transform: translate(-50%, 0);
-		margin: 0 0 0 -10px;
+		margin: 0 0 0 -58px;
+		width: 736px;
+		display: flex;
+		align-items: center;
+
+		&-img {
+			position: relative;
+			z-index: 2;
+		}
+		&-color {
+			position: absolute;
+			z-index: 1;
+			top: 5px;
+			right: -90px;
+		}
 	}
 	&__word {
 		color: $color-white;
@@ -69,5 +86,89 @@
 		transform: translate(-50%, 0);
 		display: flex;
 		justify-content: flex-end;
+	}
+
+	@include media-breakpoint-down(md)
+	{
+		&__slider {
+			padding: 0;
+		}
+		&__gradient {
+			width: 400px;
+			height: 400px;
+		}
+		&__img {
+			height: 650px;
+		}
+		&__logo {
+			top: 250px;
+			margin: 0 0 0 -30px;
+			width: 400px;
+
+			&-color {
+				top: -75px;
+			}
+		}
+		&__word {
+			top: 335px;
+			margin: 0 0 0 25px;
+			font-size: 14px;
+		}
+		&__btn {
+			top: 410px;
+		}
+	}
+	@include media-breakpoint-down(sm)
+	{
+		&::before {
+			content: "";
+			height: 250px;
+			background: linear-gradient(0, $transparent 0%, $transparent-black 53%);
+			position: absolute;
+			top: 0;
+			right: 0;
+			left: 0;
+			z-index: 8;
+		}
+		&::after {
+			content: "";
+			height: 250px;
+			background: linear-gradient(180deg, $transparent 0%, $bg-main 100%);
+			position: absolute;
+			bottom: 0;
+			right: 0;
+			left: 0;
+			z-index: 8;
+		}
+		&__img {
+			max-width: 200%;
+			left: 50%;
+			transform: translate(-50%, 0);
+			margin: 0;
+		}
+		&__logo {
+			top: 235px;
+			margin: 0;
+			width: 212px;
+
+			&-color {
+				top: -25px;
+				width: 75px;
+				right: -40px;
+			}
+		}
+		&__word {
+			font-size: 12px;
+			letter-spacing: 1.8px;
+			left: 0;
+			right: 0;
+			margin: 0;
+			top: 295px;
+		}
+		&__btn {
+			padding: 0 30px;
+			top: 380px;
+			justify-content: center;
+		}
 	}
 }

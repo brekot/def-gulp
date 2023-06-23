@@ -3,6 +3,7 @@
     bottom: 0;
     right: 0;
     display: flex;
+    z-index: 10;
 
     &__str {
         height: 85px;
@@ -29,6 +30,25 @@
 
         &_prev {
             transform: rotate(180deg);
+        }
+    }
+
+    @include media-breakpoint-down(md)
+	{
+        &__str {
+            height: 55px;
+            width: 40px;
+
+            &_prev {
+                padding: 0 0 0 10px;
+            }
+            &_next {
+                padding: 0 10px 0 0;
+            }
+        }
+        &__icon {
+            width: 14px;
+            height: 10px;
         }
     }
 }

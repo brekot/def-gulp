@@ -12,7 +12,7 @@ if (document.querySelector('.js-index-active'))
 
     function reverseBlocks()
     {
-        if (window.innerWidth < 768) return;
+       // if (window.innerWidth < 992) return;
 
         let scrollDistance = window.scrollY;
 
@@ -32,6 +32,8 @@ if (document.querySelector('.js-index-active'))
 
             if (el.offsetTop - (window.innerHeight / 2) <= scrollDistance)
             {
+                if (scrollDistance == 0) i = 0;
+
                 if (blocks[i].dataset.reverseHeader === 'Y')
                 {
                     document.querySelector('.nav-index-line').classList.add('nav-index-line_reverse');

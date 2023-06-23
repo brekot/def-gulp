@@ -2,7 +2,7 @@
 
 //@import "./grid/ms/grid.ms";
 
-@import "./grid/container";
+//@import "./grid/container";
 
 /* .row {
     display: flex;
@@ -28,13 +28,13 @@
     @include media-breakpoint-up($breakpoint)
     {
         $infix: breakpoint-infix($breakpoint, $grid-breakpoints);
-  /*
+
         .d#{$infix}-none { display: none !important; }
         .d#{$infix}-inline { display: inline !important; }
         .d#{$infix}-inline-block { display: inline-block !important; }
         .d#{$infix}-block { display: block !important; }
         .d#{$infix}-flex { display: flex !important; }
-
+  /*
         .d#{$infix}-table { display: table !important; }
         .d#{$infix}-table-row { display: table-row !important; }
         .d#{$infix}-table-cell { display: table-cell !important; }

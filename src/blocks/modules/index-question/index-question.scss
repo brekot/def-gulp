@@ -50,4 +50,37 @@
         top: 530px;
         left: 50%;
     }
+
+    @include media-breakpoint-down(md)
+	{
+        & {
+            height: 800px;
+
+            &__word {
+
+                &-color {
+                    top: 390px;
+                }	
+                &-style {
+                    top: 35px;
+                }
+            }
+
+            &__d {
+                display: none;
+            }
+            &__text {
+                font-size: 20px;
+                top: 215px;
+                max-width: 300px;
+                margin: auto;
+            }
+            &__btn {
+                top: 300px;
+                left: 0;
+                right: 0;
+                text-align: center;
+            }
+        }
+    }
 }

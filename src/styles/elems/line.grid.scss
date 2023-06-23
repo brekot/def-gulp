@@ -60,4 +60,11 @@
             margin: 0 0 0 423px;
         }
     }
+
+    @include media-breakpoint-down(md)
+	{
+        & {
+            display: none;
+        }
+    }
 }

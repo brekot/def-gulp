@@ -27,4 +27,18 @@
             transform: translate(-57px, 0);
         }
     }
+
+    @include media-breakpoint-down(md)
+	{
+        &__word {
+            transform: translate(-57px, 0);
+
+            &_color {
+                height: 140px;
+            }
+            &_style {
+                height: 132px;
+            }
+        }
+    }
 }
