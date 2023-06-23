@@ -1,6 +1,8 @@
 //import { Fancybox } from "@fancyapps/ui";
 
 import "%modules%/index-main/index-main";
+import "%modules%/index-review/index-review";
+
 
 if (document.querySelector('.js-index-active'))
 {

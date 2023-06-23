@@ -3,8 +3,9 @@
     position: absolute;
     width: 100%;
 	opacity: .25;
-	z-index: 5;
-	overflow: hidden;
+    z-index: 1;
+    overflow: hidden;
+    pointer-events: none;
 
 	&::before,
 	&::after,

@@ -13,8 +13,10 @@
 @import "base/general";
 
 // Элементы
+@import "elems/elems";
 @import "elems/line.grid";
 @import "elems/words.block";
+@import "elems/point.block";
 @import "elems/btns";
 @import "elems/str.block";
 

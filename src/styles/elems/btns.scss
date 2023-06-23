@@ -17,6 +17,10 @@
         color: $color-white;
         border-color: $color-white;
     }
+    &_black {
+        color: $bg-main;
+        border-color: $bg-main;
+    }
     &__str {
         fill: $color-main;
         width: 15px;

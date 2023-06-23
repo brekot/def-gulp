@@ -32,11 +32,6 @@
         top: 210px;
     }
     &__text {
-        color: $color-white;
-        font-size: 45px;
-        font-weight: 600;
-        letter-spacing: 4.5px;
-        text-transform: uppercase;
         text-align: center;
         position: absolute;
         z-index: 5;
@@ -70,9 +65,8 @@
                 display: none;
             }
             &__text {
-                font-size: 20px;
                 top: 215px;
-                max-width: 300px;
+                max-width: 270px;
                 margin: auto;
             }
             &__btn {
