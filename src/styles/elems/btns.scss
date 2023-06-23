@@ -32,6 +32,13 @@
         border-color: $color-main;
     }
 
+    @include media-breakpoint-up(xl)
+	{
+        &_spec {
+            padding: 0;
+            width: 343px;
+        }
+    }
     @include media-breakpoint-down(md)
 	{
         & {

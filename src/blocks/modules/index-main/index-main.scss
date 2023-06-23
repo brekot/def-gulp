@@ -29,7 +29,7 @@
 	&__gradient {
 		width: 845px;
 		height: 845px;
-		background: radial-gradient(50% 50.00% at 50% 50.00%, rgba(255, 255, 255, 0.15) 0%, rgba(255, 255, 255, 0.00) 100%);
+		background: radial-gradient(50% 50% at 50% 50%, $opacity2 0%, $transparent 100%);
 		position: absolute;
 		left: 50%;
 		transform: translate(-50%,0);

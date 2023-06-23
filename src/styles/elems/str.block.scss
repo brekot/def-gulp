@@ -14,15 +14,19 @@
         justify-content: center;
         fill: $bg-main;
 
-        &:hover {
-            fill: $color-main;
-        }
         &_prev {
             padding: 0 0 0 25px;
         }
         &_next {
             padding: 0 25px 0 0;
         }
+    }
+    &_dark &__str {
+        background-color: $bg-main;
+        fill: $color-white;
+    }
+    &__str:hover {
+        fill: $color-main;
     }
     &__icon {
         width: 20px;
@@ -35,6 +39,12 @@
 
     @include media-breakpoint-down(md)
 	{
+        &_up {
+            left: 0;
+            top: 0;
+            bottom: auto;
+            right: auto;
+        }
         &__str {
             height: 55px;
             width: 40px;
