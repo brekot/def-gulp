@@ -1,6 +1,7 @@
 //import { Fancybox } from "@fancyapps/ui";
 
 import "%modules%/index-main/index-main";
+import "%modules%/index-cat/index-cat";
 import "%modules%/index-change/index-change";
 import "%modules%/index-salons/index-salons";
 import "%modules%/index-review/index-review";

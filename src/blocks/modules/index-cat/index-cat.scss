@@ -1,0 +1,129 @@
+.index-cat {
+    position: relative;
+    background: url(../img/index-cat/bg.jpg) no-repeat 100% calc(100% - 190px);
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        left: 0;
+        right: calc(50% + 534px);
+        background-color: $color-grey5;
+    }
+
+    &__point {
+
+        &-one {
+            bottom: 395px;
+            margin: 0 0 0 -848px;
+        }
+        &-two {
+            top: 220px;
+            margin: 0 0 0 -538px;
+        }
+        &-three {
+            bottom: 122px;
+            margin: 0 0 0 -5px;
+        }
+        &-four {
+            top: 510px;
+            margin: 0 0 0 838px;
+        }
+    }
+
+    &__inner {
+        position: relative;
+        display: flex;
+        align-items: center;
+        padding: 60px 50px;
+    }
+    &__left {
+        width: calc(50% + 150px);
+        display: flex;
+        justify-content: flex-end;
+        padding: 0 70px 0 0;
+    }
+    &__block {
+        background: url(../img/index-cat/d.svg) no-repeat left top;
+        width: 810px;
+        padding: 155px 0 85px;
+    }
+    &__text {
+        font-size: 16px;
+        margin: 30px 0 90px;
+    }
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+    }
+    &__right {
+        width: calc(50% - 150px);
+    }
+    &__picts {
+        margin: 0 0 -25px;
+    }
+    &__pict {
+        display: block;
+        margin: 0 0 25px;
+    }
+    &__slider {
+        display: none;
+    }
+
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            background-position: top right;
+            background-size: 120px auto;
+
+            &:before {
+                right: 50%;
+            }
+            &__inner {
+                flex-direction: column;
+                padding: 0 0 60px;
+            }
+            &__left {
+                width: 100%;
+                justify-content: flex-start;
+                padding: 80px 35px 30px;
+            }
+            &__block {
+                background: none;
+                width: auto;
+                padding: 0;
+            }
+            &__title {
+                max-width: 100%;
+                padding: 0;
+            }
+            &__text {
+                font-size: 14px;
+                margin: 25px 0 35px;
+            }
+            &__btn {
+                justify-content: center;
+
+                a {
+                    font-size: 11px;
+                }
+            }
+            &__right {
+                width: 100%;
+            }
+            &__picts {
+                display: none;
+            }
+            &__slider {
+                display: block;
+            }
+            &__slide {
+               width: 154px;
+            }
+            &__img {
+                display: block;
+            }
+        }
+    }
+}
