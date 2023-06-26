@@ -11,6 +11,9 @@
         position: absolute;
         left: 50%;
 
+        &_dark {
+            fill: $bg-main;
+        }
         &_color {
             width: 115px;
             height: 210px;
@@ -26,9 +29,6 @@
             height: 198px;
             transform: translate(-57px, 0);
         }
-    }
-    &_dark &__word {
-        fill: $bg-main;
     }
 
     @include media-breakpoint-down(md)

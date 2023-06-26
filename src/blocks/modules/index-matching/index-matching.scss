@@ -1,0 +1,148 @@
+.index-matching {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: calc(50% - 534px);
+        background-color: $color-grey5;
+    }
+
+	&__word {
+
+		&-color {
+			top: 174px;
+		}	
+		&-style {
+			top: 142px;
+		}
+		&-paint {
+			bottom: 48px;
+		}
+	}
+
+    &__point {
+
+        &-one {
+            margin: 0 0 0 -848px;
+            top: 428px;
+        }
+        &-two {
+            margin: 0 0 0 838px;
+            top: 114px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        position: relative;
+    }
+    &__left {
+        position: absolute;
+        z-index: 1;
+        width: 580px;
+        left: 50%;
+        top: 50%;
+        transform: translate(0, -50%);
+        margin: 0 0 0 -426px;
+    }
+    &__text {
+        font-size: 16px;
+        margin: 35px 0 85px;
+    }
+    &__btn {
+        position: relative;
+        z-index: 2;
+    }
+    &__img-small {
+        position: absolute;
+        left: -500px;
+        top: 60px;
+    }
+    &__right {
+        margin: 0 0 0 auto;
+        position: relative;
+    }
+    &__img-big {
+        display: block;
+    }
+    &__d {
+        position: absolute;
+        z-index: 5;
+        left: -223px;
+        top: 320px;
+    }
+
+    @include media-breakpoint-between(lg, xl)
+	{
+        &__img-small {
+            display: none;
+        }
+        &__img-big {
+            width: 350px;
+        }
+        &__d {
+            left: -150px;
+            top: 205px;
+            width: 300px;
+        }
+    }
+    @include media-breakpoint-down(md)
+	{
+        &::before {
+            left: 50%;
+        }
+        &__left {
+            position: static;
+            transform: none;
+            margin: 0;
+            width: 100%;
+            padding: 60px 35px;
+        }
+        &__text {
+            font-size: 14px;
+            margin: 25px 0 35px;
+        }
+        &__right {
+            display: none;
+        }
+    }
+    @include media-breakpoint-only(md)
+	{
+        &__left {
+            max-width: 500px;
+        }
+        &__img-small {
+            position: absolute;
+            right: 0;
+            top: -30px;
+            width: 343px;
+            left: auto;
+            max-width: 500px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        &__left {
+            padding: 60px 35px 0;
+        }
+        &__img-small {
+            position: relative;
+            right: auto;
+            top: 0;
+            width: 343px;
+            left: 50%;
+            max-width: 343px;
+            margin: -42px 0 -36px -147px;
+        }
+        &__btn {
+            text-align: center;
+        }
+    }
+}
