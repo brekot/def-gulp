@@ -6,6 +6,9 @@
     overflow: hidden;
     pointer-events: none;
 
+    &_z2 {
+        z-index: 2;
+    }
     &__point {
         background-color: $color-main;
         height: 12px;
