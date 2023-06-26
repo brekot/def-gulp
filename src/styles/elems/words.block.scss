@@ -27,6 +27,9 @@
             transform: translate(-57px, 0);
         }
     }
+    &_dark &__word {
+        fill: $bg-main;
+    }
 
     @include media-breakpoint-down(md)
 	{

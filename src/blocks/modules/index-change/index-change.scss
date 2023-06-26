@@ -1,0 +1,124 @@
+.index-change {
+    position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        bottom: 0;
+        right: 0;
+        left: calc(50% - 534px);
+        background-color: $color-grey5;
+    }
+
+    &__word-color {
+        top: 680px;
+    }
+
+    &__point {
+
+        &-one {
+            margin: 0 0 0 -848px;
+            top: 505px;
+        }
+        &-two {
+            margin: 0 0 0 529px;
+            bottom: 65px;
+        }
+    }
+
+    &__inner {
+        display: flex;
+        position: relative;
+        z-index: 5;
+        padding: 0 0 100px;
+    }
+    &__left {
+        width: calc(50% - 200px);
+        display: flex;
+        justify-content: flex-end;
+        padding: 405px 0 0 50px;
+    }
+    &__title {
+        line-height: 130%;
+        max-width: 565px;
+        padding: 0 30px 0 0;
+    }
+    &__right {
+        width: calc(50% + 200px);
+    }
+    &__slider {
+        margin: 0 0 35px;
+    }
+    &__img {
+        width: 100%;
+        display: block;
+    }
+    &__name {
+        color: $bg-main;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 10px;
+
+        &::after {
+            content: '';
+            width: 23px;
+            height: 2px;
+            background-color: $bg-main;
+            position: absolute;
+            left: 0;
+            bottom: 0;
+        }
+    }
+
+    @include media-breakpoint-down(xl)
+	{
+        &::before {
+            left: calc(50% - 150px);
+        }
+        &__left,
+        &__right {
+            width: 50%;
+        }
+        &__left {
+            padding: 200px 0 0 50px;
+        }
+    }
+    @include media-breakpoint-only(md)
+	{
+        &__title {
+            max-width: 100%;
+            padding: 0 60px 0 0;
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        &:before {
+            left: 50%;
+        }
+        &__inner {
+            flex-direction: column;
+            padding: 0 0 50px;
+        }
+        &__left {
+            width: 100%;
+            justify-content: flex-start;
+            padding: 60px 35px 45px;
+        }
+        &__title {
+            max-width: 100%;
+            padding: 0;
+        }
+        &__right {
+            width: 100%;
+        }
+        &__name {
+            margin: 0 15px;
+            font-size: 12px;
+            letter-spacing: 1.8px; 
+        }
+    }
+}

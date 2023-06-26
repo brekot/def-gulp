@@ -37,6 +37,12 @@
         }
     }
 
+    @include media-breakpoint-up(md)
+	{
+        &_gray &__str {
+            background-color: $color-grey5;
+        }
+    }
     @include media-breakpoint-down(md)
 	{
         &_up {

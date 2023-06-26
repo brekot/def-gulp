@@ -35,13 +35,12 @@
         width: 50%;
         position: relative;
     }
+    &__slider {
+        margin: 0 0 35px;
+    }
     &__img {
         display: block;
         width: 100%;
-        margin: 0 0 35px;
-    }
-    &__str {
-        bottom: 69px;
     }
     &__name {
         color: $color-white;
@@ -51,9 +50,6 @@
         text-transform: uppercase;
         position: relative;
         padding: 0 0 10px;
-        white-space: nowrap;
-        text-overflow: ellipsis;
-        overflow: hidden;
 
         &::after {
             content: '';
@@ -102,9 +98,6 @@
 	{
         &__gradient {
             display: none;
-        }
-        &__name {
-            white-space: normal;
         }
     }
     @include media-breakpoint-down(sm)
