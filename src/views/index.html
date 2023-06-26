@@ -9,21 +9,61 @@
         <link rel="stylesheet" href="local/styles/main.css">
     </head>
     <body>
+
         <!-- bitrix panel here -->
+
+        <!-- Шапка -->
         @@include("../blocks/modules/header/header.html")
+        <!-- Шапка -->
+
         <div class="work-area">
-            <!-- header finish -->
+
+            <!-- bitrix header finish -->
+
+            <!-- Первый блок -->
             @@include("../blocks/modules/index-main/index-main.html")
+            <!-- Первый блок -->
+
+            <!-- О нас -->
             @@include("../blocks/modules/index-about/index-about.html")
+            <!-- О нас -->
+
+            <!-- Краш-тесты -->
+            @@include("../blocks/modules/index-crash/index-crash.html")
+            <!-- Краш-тесты -->
+
+            <!-- Каталог покрытий -->
             @@include("../blocks/modules/index-cat/index-cat.html")
+            <!-- Каталог покрытий -->
+
+            <!-- Нас выбирают -->
             @@include("../blocks/modules/index-change/index-change.html")
+            <!-- Нас выбирают -->
+
+            <!-- Салоны -->
             @@include("../blocks/modules/index-salons/index-salons.html")
+            <!-- Салоны -->
+
+            <!-- Отзывы -->
             @@include("../blocks/modules/index-review/index-review.html")
+            <!-- Отзывы -->
+
+            <!-- Остались вопросы -->
             @@include("../blocks/modules/index-question/index-question.html")
-            <!-- footer start -->
+            <!-- Остались вопросы -->
+
+            <!-- bitrix footer start -->
+
         </div>
+
+        <!-- Подвал -->
         @@include("../blocks/modules/footer/footer.html")
+        <!-- Подвал -->
+
+        <!-- Левая полоса -->
         @@include("../blocks/modules/nav-index-line/nav-index-line.html")
+        <!-- Левая полоса -->
+
         <script src="local/js/vendor.js"></script>
         <script src="local/js/main.js"></script>
     </body>
