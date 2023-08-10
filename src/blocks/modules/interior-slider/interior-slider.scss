@@ -1,0 +1,60 @@
+.interior-slider {
+    margin: 0 0 65px;
+    position: relative;
+
+    &__title {
+        color: $bg-main;
+        font-size: 16px;
+        font-weight: 600;
+        line-height: 145%;
+        margin: 0 0 20px;
+    }
+    &__inner {
+        padding: 0 40px;
+    }
+    &__link {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__name {
+        color: $color-black;
+        background-color: $color-white;
+        font-size: 12px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 1.2px;
+        text-transform: uppercase; 
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        padding: 26px 10px 14px;
+        max-width: 210px;
+        width: 100%;
+
+        &:after {
+            content: "";
+            position: absolute;
+            bottom: 2px;
+            left: 10px;
+            background-color: $color-main;
+            height: 2px;
+            width: 23px;
+        }
+    }
+    &__prev,
+    &__next {
+        position: absolute;
+        top: 50%;
+        margin: -20px 0 0;
+    }
+    &__prev {
+        left: 0;
+        justify-content: flex-start;
+    }
+    &__next {
+        right: 0;
+        justify-content: flex-end;
+    }
+}

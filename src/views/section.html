@@ -1,0 +1,87 @@
+@@include("../blocks/modules/main/header.html")
+
+    <!-- bitrix panel here -->
+
+    <!-- Шапка -->
+    @@include("../blocks/modules/header/header.html")
+    <!-- Шапка -->
+
+    <div class="work-area">
+
+        <div class="main-block js-index-active" data-reverse-header="N">
+
+            <div class="line-grid">
+                <span class="line-grid__one"></span>
+                <span class="line-grid__two"></span>
+            </div>
+
+            <div class="words-block d-none d-lg-block">
+                <svg class="main-block__word-color words-block__word words-block__word_dark words-block__word_color">
+                    <use xlink:href="local/img/sprites/sprite.svg#word.color"></use>
+                </svg>
+                <svg class="main-block__word-style words-block__word words-block__word_dark words-block__word_style">
+                    <use xlink:href="local/img/sprites/sprite.svg#word.style"></use>
+                </svg>
+            </div>
+
+            <div class="point-block">
+                <div class="main-block__point-one point-block__point"></div>
+                <div class="main-block__point-two point-block__point"></div>
+                <div class="main-block__point-three point-block__point"></div>
+            </div>
+
+            <div class="main-block__inner">
+
+                <div class="container">
+
+                    <div class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__link">Главная</a>
+                        <span class="breadcrumbs__separator">/</span>
+                        <a href="/" class="breadcrumbs__link">Каталог</a>
+                        <span class="breadcrumbs__separator">/</span>
+                        <span class="breadcrumbs__current">Краски для интерьеров</span>
+                    </div>
+
+                    <h1>Краски для интерьеров</h1>
+
+                </div>
+
+                <!-- bitrix header finish -->
+
+                @@include("../blocks/modules/catalog-section-links/catalog-section-links.html")
+
+                <div class="catalog-parts">
+                    <div class="container">
+                        <div class="catalog-parts__inner">
+                            <div class="catalog-parts__filter">
+
+                                @@include("../blocks/modules/catalog-filter/catalog-filter.html")
+
+                            </div>
+                            <div class="catalog-parts__list">
+
+                                @@include("../blocks/modules/section-tabs/section-tabs.html")
+
+                                @@include("../blocks/modules/interior-slider/interior-slider.html")
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- bitrix footer start -->
+
+            </div>
+        </div>
+
+        <!-- Остались вопросы -->
+        @@include("../blocks/modules/index-question/index-question.html")
+        <!-- Остались вопросы -->
+
+    </div>
+
+    <!-- Подвал -->
+    @@include("../blocks/modules/footer/footer.html")
+    <!-- Подвал -->
+
+@@include("../blocks/modules/main/footer.html")

@@ -37,6 +37,15 @@
         }
     }
 
+    &_inner {
+        position: static;
+    }
+    &_inner &__str {
+        height: 40px;
+        width: 40px;
+        padding: 0;
+    }
+
     @include media-breakpoint-up(md)
 	{
         &_gray &__str {

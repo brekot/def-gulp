@@ -5,3 +5,15 @@
 .mb-0 {
     margin-bottom: 0;
 }
+
+.question-icon {
+    fill: $color-text;
+
+    &:hover {
+        fill: $color-main;
+    }
+    &__icon {
+        height: 24px;
+        width: 24px;
+    }
+}

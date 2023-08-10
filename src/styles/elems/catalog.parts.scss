@@ -1,0 +1,14 @@
+.catalog-parts {
+
+    &__inner {
+        display: flex;
+        justify-content: space-between;
+    }
+    &__filter {
+        width: 342px;
+    }
+    &__list {
+        width: calc(100% - 370px);
+        max-width: 1070px;
+    }
+}

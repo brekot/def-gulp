@@ -7,6 +7,8 @@ import "%modules%/index-cat/index-cat";
 import "%modules%/index-change/index-change";
 import "%modules%/index-salons/index-salons";
 import "%modules%/index-review/index-review";
+import "%modules%/catalog-filter/catalog-filter";
+import "%modules%/interior-slider/interior-slider";
 
 if (document.querySelector('.js-index-active'))
 {
