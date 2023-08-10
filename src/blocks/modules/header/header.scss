@@ -38,6 +38,10 @@
         display: flex;
         align-items: center;
     }
+    &__phone-city {
+        display: flex;
+        flex-direction: column;
+    }
     &__phone {
         font-weight: 600;
         letter-spacing: 1.8px;
@@ -56,6 +60,11 @@
             margin: 0 0 0 15px;
         }
     }
+    &__city {
+        color: $color-grey4;
+        font-size: 13px;
+        font-weight: 400;
+    }
     &__search {
         margin: 0 0 0 45px;
     }
@@ -71,7 +80,7 @@
 
     @include media-breakpoint-down(xl)
 	{
-        &__phone {
+        &__phone-city {
             display: none;
         }
         &__search {
@@ -80,14 +89,7 @@
     }
     @include media-breakpoint-down(lg)
 	{
-        &__search {
-            display: none;
-        }
-    }
-    @include media-breakpoint-down(md)
-	{
-        &__menu,
-        &__lang {
+        &__menu {
             display: none;
         }
     }
@@ -105,6 +107,15 @@
             &__logo {
                 width: 100px;
             }
+            &__lang {
+                margin: 0 0 0 25px;
+            }
+            &__links {
+                margin: 0;
+            }
+            &__menu-btn {
+                margin: 0 0 0 30px;
+            }
         }
     }
 }
@@ -121,11 +132,7 @@
         margin: 0 55px 0 0;
         position: relative;
 
-        .header-main_reverse & {
-            color: $color-white;
-        }
-
-        &::before {
+        &:before {
             content: '';
             height: 4px;
             width: 4px;
@@ -135,6 +142,35 @@
             top: 50%;
             left: -20px;
             margin: -2px 0 0;
+        }
+        &:after {
+            content: "";
+            width: 0;
+            height: 2px;
+            background-color: $color-black;
+            position: absolute;
+            left: 0;
+            bottom: -8px;
+            transition: .5s;
+        }
+
+        &_active:after {
+            width: 23px;
+        }
+
+        &:hover {
+            color: $color-black;
+        }
+        &:hover:after {
+            width: 100%;
+        }
+
+        .header-main_reverse &,
+        .header-main_reverse &:hover {
+            color: $color-white;
+        }
+        .header-main_reverse &:after {
+            background-color: $color-white;
         }
     }
 }
