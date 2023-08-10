@@ -1,7 +1,5 @@
 .catalog-filter {
 
-    &__item {
-    }
     &__name {
         color: $color-black;
         font-size: 16px;
@@ -33,9 +31,6 @@
     &__block {
         padding: 0 0 30px;
         display: none;
-    }
-    &__name_open ~ &__block {
-        display: block;
     }
     &__label {
         position: relative;
