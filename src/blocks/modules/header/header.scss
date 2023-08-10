@@ -94,11 +94,14 @@
     @include media-breakpoint-down(sm)
 	{
         & {
-            border-bottom: 1px solid $opacity2;
+            border-bottom: 1px solid $color-grey6;
             top: -70px;
             padding: 0 15px;
             height: 70px;
 
+            &_reverse {
+                border-color: $opacity2;
+            }
             &__logo {
                 width: 100px;
             }

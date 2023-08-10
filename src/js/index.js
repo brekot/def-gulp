@@ -10,11 +10,11 @@ import "%modules%/index-review/index-review";
 
 if (document.querySelector('.js-index-active'))
 {
-    let blocks = document.querySelectorAll('.js-index-active');
+    let blocks = document.querySelectorAll('.js-index-active'),
+        blockCount = blocks.length,
+        leftLine = document.querySelector('.nav-index-line__count-full');
 
-    let blockCount = blocks.length;
-
-    document.querySelector('.nav-index-line__count-full').innerText = (blockCount > 9 ? blockCount : '0' + blockCount);
+    if (leftLine) leftLine.innerText = (blockCount > 9 ? blockCount : '0' + blockCount);
 
     function reverseBlocks()
     {
@@ -36,7 +36,7 @@ if (document.querySelector('.js-index-active'))
                 }
             }
 
-            if (el.offsetTop - (window.innerHeight / 2) <= scrollDistance)
+            if (leftLine && el.offsetTop - (window.innerHeight / 2) <= scrollDistance)
             {
                 if (scrollDistance == 0) i = 0;
 

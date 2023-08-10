@@ -1,0 +1,71 @@
+@@include("../blocks/modules/main/header.html")
+
+    <!-- bitrix panel here -->
+
+    <!-- Шапка -->
+    @@include("../blocks/modules/header/header.html")
+    <!-- Шапка -->
+
+    <div class="work-area">
+
+        <!-- .main-block_bg-left - только на этой странице -->
+        <div class="main-block main-block_bg-left js-index-active" data-reverse-header="N">
+
+            <div class="line-grid">
+                <span class="line-grid__one"></span>
+                <span class="line-grid__two"></span>
+            </div>
+
+            <div class="words-block d-none d-lg-block">
+                <svg class="main-block__word-color words-block__word words-block__word_dark words-block__word_color">
+                    <use xlink:href="local/img/sprites/sprite.svg#word.color"></use>
+                </svg>
+                <svg class="main-block__word-style words-block__word words-block__word_dark words-block__word_style">
+                    <use xlink:href="local/img/sprites/sprite.svg#word.style"></use>
+                </svg>
+                <!-- это svg только на этой странице -->
+                <svg class="main-block__word-paint words-block__word words-block__word_dark words-block__word_paint">
+                    <use xlink:href="local/img/sprites/sprite.svg#word.paint"></use>
+                </svg>
+            </div>
+
+            <div class="point-block">
+                <div class="main-block__point-one point-block__point"></div>
+                <div class="main-block__point-two point-block__point"></div>
+                <div class="main-block__point-three point-block__point"></div>
+            </div>
+
+            <div class="main-block__inner">
+
+                <div class="container">
+
+                    <div class="breadcrumbs">
+                        <a href="/" class="breadcrumbs__link">Главная</a>
+                        <span class="breadcrumbs__separator">/</span>
+                        <span class="breadcrumbs__current">Каталог</span>
+                    </div>
+
+                    <h1>Каталог</h1>
+
+                </div>
+
+                <!-- bitrix header finish -->
+
+                @@include("../blocks/modules/catalog-section-list/catalog-section-list.html")
+
+                <!-- bitrix footer start -->
+
+            </div>
+        </div>
+
+        <!-- Остались вопросы -->
+        @@include("../blocks/modules/index-question/index-question.html")
+        <!-- Остались вопросы -->
+
+    </div>
+
+    <!-- Подвал -->
+    @@include("../blocks/modules/footer/footer.html")
+    <!-- Подвал -->
+
+@@include("../blocks/modules/main/footer.html")

@@ -1,0 +1,62 @@
+.main-block {
+    margin: -100px 0 0;
+    position: relative;
+    overflow: hidden;
+
+    &__inner {
+        padding: 115px 0 0;
+        position: relative;
+        z-index: 1;
+    }
+    &__word {
+
+        &-color {
+            transform: translate(-900px, 0);
+            top: 900px;
+        }
+        &-style {
+            transform: translate(785px, 0);
+            top: 480px;
+        }
+        &-paint {
+            bottom: 50px;
+        }
+    }
+    &__point {
+
+        &-one {
+            margin: 0 0 0 -5px;
+            top: 150px;
+        }
+        &-two {
+            margin: 0 0 0 838px;
+            top: 1670px;
+        }
+        &-three {
+            margin: 0 0 0 -848px;
+            top: 2125px;
+        }
+    }
+
+    @include media-breakpoint-up(xl)
+    {
+        &_bg-left:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            right: 0;
+            left: calc(50% + 423px);
+            background-color: #FAF9F9;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        & {
+            margin: 0;
+        }
+        &__inner {
+            padding: 95px 0 0;
+        }
+    }
+}
