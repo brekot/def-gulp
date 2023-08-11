@@ -58,8 +58,8 @@
     }
     &__more {
         height: 100%;
-        border: 1px solid #000;
-        color: #000;
+        border: 1px solid $color-black;
+        color: $color-black;
         font-size: 12px;
         font-weight: 600;
         letter-spacing: 2px;
@@ -78,6 +78,78 @@
             width: 12px;
             height: 6px;
             transform: rotate(90deg);
+        }
+    }
+
+    @include media-breakpoint-only(xl)
+	{
+        & {
+            padding: 0 0 0 180px;
+            height: 45px;
+        }
+        &__current {
+            width: 45px;
+        }
+        &__link {
+            width: 35px;
+        }
+        &__more {
+            width: 180px;
+        }
+    }
+    @include media-breakpoint-only(lg)
+	{
+        & {
+            padding: 0 0 0 200px;
+            height: 45px;
+        }
+        &__current {
+            width: 45px;
+        }
+        &__link {
+            width: 40px;
+        }
+        &__more {
+            width: 200px;
+        }
+    }
+    @include media-breakpoint-down(md)
+	{
+        & {
+            padding: 0;
+            flex-direction: column;
+            height: auto;
+            margin: 0 0 60px;
+        }
+        &__items {
+            margin: 0 auto 30px;
+            height: 45px;
+        }
+        &__current {
+            width: 45px;
+        }
+        &__more {
+            height: 60px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+	{
+        &__current {
+            border-width: 1px;
+            font-size: 12px;
+        }
+        &__link {
+            font-size: 12px;
+            width: 40px;
+        }
+        &__str {
+
+            &_prev {
+                margin: 0 15px 0 0;
+            }
+            &_next {
+                margin: 0 0 0 15px;
+            }
         }
     }
 }

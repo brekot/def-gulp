@@ -3,14 +3,52 @@
     align-items: center;
     justify-content: space-between;
     margin: 0 0 50px;
+    position: relative;
 
     &__search {
         width: calc(100% - 620px);
     }
     &__sort {
-        margin: 0 45px 0 65px;
+        margin: 0 0 0 65px;
     }
     &__type {
+        margin: 0 0 0 45px;
+    }
+
+    @include media-breakpoint-only(xl)
+	{
+        &__search {
+            width: calc(100% - 500px);
+        }
+        &__sort,
+        &__type {
+            margin: 0 0 0 30px;
+        }
+    }
+    @include media-breakpoint-down(md)
+	{
+        & {
+            flex-wrap: wrap;
+        }
+        &__search {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+        &__sort,
+        &__type {
+            margin: 0;
+        }
+    }
+    @include media-breakpoint-only(xs)
+	{
+        &__sort {
+            width: 100%;
+        }
+        &__type {
+            position: absolute;
+            right: 0;
+            bottom: 70px;
+        }
     }
 }
 
@@ -51,6 +89,14 @@
         width: 18px;
         height: 18px;
     }
+
+    @include media-breakpoint-only(xs)
+	{
+        &__input {
+            font-size: 13px;
+            height: 45px;
+        }
+    }
 }
 
 .section-panel-sort {
@@ -64,6 +110,26 @@
     }
     &__select {
         width: 310px;
+    }
+
+    @include media-breakpoint-only(xl)
+	{
+        &__select {
+            width: 240px;
+        }
+    }
+    @include media-breakpoint-only(xs)
+	{
+        & {
+            flex-direction: column;
+            align-items: flex-start;
+        }
+        &__title {
+            margin: 0 0 18px;
+        }
+        &__select {
+            width: 100%;
+        }
     }
 }
 
@@ -118,6 +184,22 @@
     &_open &__items {
         display: block;
     }
+
+    @include media-breakpoint-only(xs)
+	{
+        &__button {
+            height: 50px;
+            padding: 0 15px;
+            font-size: 10px;
+        }
+        &__name {
+            padding: 0 40px 0 15px;
+
+            &:after {
+                right: 15px;
+            }              
+        }
+    }
 }
 
 .section-panel-type {
@@ -146,6 +228,24 @@
         &-two {
             height: 23px;
             width: 26px;
+        }
+    }
+
+    @include media-breakpoint-only(xs)
+	{
+        & {
+            width: 50px;
+        }
+        &__type {
+
+            &-one {
+                height: 18px;
+                width: 18px;
+            }
+            &-two {
+                height: 18px;
+                width: 20px;
+            }
         }
     }
 }

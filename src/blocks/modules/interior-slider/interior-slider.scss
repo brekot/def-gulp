@@ -18,6 +18,9 @@
         justify-content: center;
         position: relative;
     }
+    &__img {
+        width: 100%;
+    }
     &__name {
         color: $color-black;
         background-color: $color-white;
@@ -56,5 +59,48 @@
     &__next {
         right: 0;
         justify-content: flex-end;
+    }
+
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            margin: 0 0 20px;
+        }
+        &__title {
+            font-size: 13px;
+            margin: 0 0 15px;
+        }
+        &__inner {
+            padding: 0;
+        }
+        &__name {
+            height: 34px;
+            letter-spacing: 1px;
+            font-size: 10px;
+            padding: 0 15px 0 5px;
+            display: flex;
+            align-items: center;
+            min-width: 155px;
+            width: auto;
+
+            &:after {
+                bottom: 2px;
+                left: 5px;
+                width: 15px;
+            }
+        }
+        &__prev,
+        &__next {
+            display: none;
+        }
+    }
+    @include media-breakpoint-only(xs)
+	{
+        &__inner {
+            width: 190px;
+        }
+        &__slider {
+            width: 600px;
+        }
     }
 }

@@ -16,4 +16,12 @@
         height: 24px;
         width: 24px;
     }
+
+    @include media-breakpoint-down(lg)
+	{
+        &__icon {
+            height: 20px;
+            width: 20px;
+        }
+    }
 }

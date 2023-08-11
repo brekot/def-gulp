@@ -126,6 +126,7 @@
 
                 <div class="catalog-section-links">
     <div class="container">
+        <div class="catalog-section-links__mobile-line"></div>
         <div class="catalog-section-links__items">
             <div class="catalog-section-links__item">
                 <a href="javascript:;" class="catalog-section-links__link catalog-section-links__link_active">Краски</a>
@@ -146,7 +147,7 @@
                 <a href="javascript:;" class="catalog-section-links__link">стеклохолсты</a>
             </div>
             <div class="catalog-section-links__item catalog-section-links__item_long">
-                <a href="javascript:;" class="catalog-section-links__link">стеклообои/стеклоткани</a>
+                <a href="javascript:;" class="catalog-section-links__link">стеклообои / стеклоткани</a>
             </div>
             <div class="catalog-section-links__item">
                 <a href="javascript:;" class="catalog-section-links__link">лепной декор</a>
@@ -158,6 +159,13 @@
                 <a href="javascript:;" class="catalog-section-links__link">трафареты</a>
             </div>
         </div>
+        <a href="javascript:;" class="catalog-section-links__all">
+            <span class="catalog-section-links__all-show">Посмотреть все</span>
+            <span class="catalog-section-links__all-hide">Скрыть</span>
+            <svg class="catalog-section-links__all-str">
+                <use xlink:href="local/img/sprites/sprite.svg#str"></use>
+            </svg>
+        </a>
     </div>
 </div>
 
@@ -168,147 +176,158 @@
 
                                 <div class="catalog-filter">
     <form action="">
-        <div class="catalog-filter__item">
-            <a href="javascript:;" class="catalog-filter__name">Цена</a>
-            <div class="catalog-filter__block">
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value1">
-                    <div class="catalog-filter__word">H&H</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value1">
-                    <div class="catalog-filter__word">Профи</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value1">
-                    <div class="catalog-filter__word">Евро</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value1">
-                    <div class="catalog-filter__word">Бюджет</div>
-                </label>
+        <div class="catalog-filter__items">
+            <div class="catalog-filter__item">
+                <a href="javascript:;" class="catalog-filter__name">Цена</a>
+                <div class="catalog-filter__block">
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value1">
+                        <div class="catalog-filter__word">H&H</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value1">
+                        <div class="catalog-filter__word">Профи</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value1">
+                        <div class="catalog-filter__word">Евро</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value1">
+                        <div class="catalog-filter__word">Бюджет</div>
+                    </label>
+                </div>
+            </div>
+            <div class="catalog-filter__item">
+                <a href="javascript:;" class="catalog-filter__name">Серия</a>
+                <div class="catalog-filter__block">
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" class="catalog-filter__check" type="checkbox" value="" name="value2">
+                        <div class="catalog-filter__word">H&H</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value2">
+                        <div class="catalog-filter__word">Профи</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value2">
+                        <div class="catalog-filter__word">Евро</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value2">
+                        <div class="catalog-filter__word">Бюджет</div>
+                    </label>
+                </div>
+            </div>
+            <div class="catalog-filter__item">
+                <a href="javascript:;" class="catalog-filter__name">помещение</a>
+                <div class="catalog-filter__block">
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="radio" value="" name="value3">
+                        <div class="catalog-filter__word">H&H</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="radio" value="" name="value3">
+                        <div class="catalog-filter__word">Профи</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="radio" value="" name="value3">
+                        <div class="catalog-filter__word">Евро</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="radio" value="" name="value3">
+                        <div class="catalog-filter__word">Бюджет</div>
+                    </label>
+                </div>
+            </div>
+            <div class="catalog-filter__item">
+                <a href="javascript:;" class="catalog-filter__name">Поверхность</a>
+                <div class="catalog-filter__block">
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value4">
+                        <div class="catalog-filter__word">H&H</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value4">
+                        <div class="catalog-filter__word">Профи</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value4">
+                        <div class="catalog-filter__word">Евро</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value4">
+                        <div class="catalog-filter__word">Бюджет</div>
+                    </label>
+                </div>
+            </div>
+            <div class="catalog-filter__item">
+                <a href="javascript:;" class="catalog-filter__name">Стойкость к мытью</a>
+                <div class="catalog-filter__block">
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value5">
+                        <div class="catalog-filter__word">H&H</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value5">
+                        <div class="catalog-filter__word">Профи</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value5">
+                        <div class="catalog-filter__word">Евро</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value5">
+                        <div class="catalog-filter__word">Бюджет</div>
+                    </label>
+                </div>
+            </div>
+            <div class="catalog-filter__item">
+                <a href="javascript:;" class="catalog-filter__name">степень блеска</a>
+                <div class="catalog-filter__block">
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value6">
+                        <div class="catalog-filter__word">H&H</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value6">
+                        <div class="catalog-filter__word">Профи</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value6">
+                        <div class="catalog-filter__word">Евро</div>
+                    </label>
+                    <label class="catalog-filter__label">
+                        <input class="catalog-filter__check" type="checkbox" value="" name="value6">
+                        <div class="catalog-filter__word">Бюджет</div>
+                    </label>
+                </div>
+            </div>
+            <div class="catalog-filter__item">
+                <div class="catalog-filter__color">
+                    <span class="catalog-filter__color-text">
+                        Выбрать цвет
+                    </span>
+                    <a href="javascript:;" class="question-icon">
+                        <svg class="question-icon__icon">
+                            <use xlink:href="local/img/sprites/sprite.svg#question"></use>
+                        </svg>
+                    </a>
+                    <a href="javascript:;" class="catalog-filter__color-value">
+                        DRF 2120
+                    </a>
+                </div>
             </div>
         </div>
-        <div class="catalog-filter__item">
-            <a href="javascript:;" class="catalog-filter__name">Серия</a>
-            <div class="catalog-filter__block">
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" class="catalog-filter__check" type="checkbox" value="" name="value2">
-                    <div class="catalog-filter__word">H&H</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value2">
-                    <div class="catalog-filter__word">Профи</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value2">
-                    <div class="catalog-filter__word">Евро</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value2">
-                    <div class="catalog-filter__word">Бюджет</div>
-                </label>
-            </div>
-        </div>
-        <div class="catalog-filter__item">
-            <a href="javascript:;" class="catalog-filter__name">помещение</a>
-            <div class="catalog-filter__block">
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="radio" value="" name="value3">
-                    <div class="catalog-filter__word">H&H</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="radio" value="" name="value3">
-                    <div class="catalog-filter__word">Профи</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="radio" value="" name="value3">
-                    <div class="catalog-filter__word">Евро</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="radio" value="" name="value3">
-                    <div class="catalog-filter__word">Бюджет</div>
-                </label>
-            </div>
-        </div>
-        <div class="catalog-filter__item">
-            <a href="javascript:;" class="catalog-filter__name">Поверхность</a>
-            <div class="catalog-filter__block">
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value4">
-                    <div class="catalog-filter__word">H&H</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value4">
-                    <div class="catalog-filter__word">Профи</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value4">
-                    <div class="catalog-filter__word">Евро</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value4">
-                    <div class="catalog-filter__word">Бюджет</div>
-                </label>
-            </div>
-        </div>
-        <div class="catalog-filter__item">
-            <a href="javascript:;" class="catalog-filter__name">Стойкость к мытью</a>
-            <div class="catalog-filter__block">
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value5">
-                    <div class="catalog-filter__word">H&H</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value5">
-                    <div class="catalog-filter__word">Профи</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value5">
-                    <div class="catalog-filter__word">Евро</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value5">
-                    <div class="catalog-filter__word">Бюджет</div>
-                </label>
-            </div>
-        </div>
-        <div class="catalog-filter__item">
-            <a href="javascript:;" class="catalog-filter__name">степень блеска</a>
-            <div class="catalog-filter__block">
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value6">
-                    <div class="catalog-filter__word">H&H</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value6">
-                    <div class="catalog-filter__word">Профи</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value6">
-                    <div class="catalog-filter__word">Евро</div>
-                </label>
-                <label class="catalog-filter__label">
-                    <input class="catalog-filter__check" type="checkbox" value="" name="value6">
-                    <div class="catalog-filter__word">Бюджет</div>
-                </label>
-            </div>
-        </div>
-        <div class="catalog-filter__item">
-            <div class="catalog-filter__color">
-                <span class="catalog-filter__color-text">
-                    Выбрать цвет
-                </span>
-                <a href="javascript:;" class="question-icon">
-                    <svg class="question-icon__icon">
-                        <use xlink:href="local/img/sprites/sprite.svg#question"></use>
-                    </svg>
-                </a>
-                <a href="javascript:;" class="catalog-filter__color-value">
-                    DRF 2120
-                </a>
-            </div>
-        </div>
+        <a href="javascript:;" class="catalog-filter__opener">
+            Фильтры
+            <svg class="catalog-filter__opener-icon-show">
+                <use xlink:href="local/img/sprites/sprite.svg#filter"></use>
+            </svg>
+            <svg class="catalog-filter__opener-icon-hide">
+                <use xlink:href="local/img/sprites/sprite.svg#close"></use>
+            </svg>
+        </a>
     </form>
 </div>
 

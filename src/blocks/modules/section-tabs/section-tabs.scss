@@ -24,4 +24,16 @@
             border-color: $color-main;
         }
     }
+
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            margin: 0 0 25px;
+        }
+        &__tab {
+            font-size: 13px;
+            padding: 0 0 15px;
+            width: calc(50% - 10px);
+        }
+    }
 }

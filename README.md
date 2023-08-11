@@ -1,5 +1,6 @@
 <a href="https://brekot.github.io/def-gulp/">Главная страница</a><br>
 <a href="https://brekot.github.io/def-gulp/sections.html">Список разделов</a><br>
+<a href="https://brekot.github.io/def-gulp/section.html">Список товаров</a><br>
 
 <hr>
 

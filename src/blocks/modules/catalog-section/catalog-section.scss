@@ -8,6 +8,14 @@
         padding: 0 15px;
         margin: 0 0 50px;
     }
+
+    @include media-breakpoint-only(xs)
+	{
+        &__item {
+            width: 100%;
+            margin: 0 0 35px;
+        }
+    }
 }
 
 .catalog-item {
@@ -24,6 +32,7 @@
     }
     &__img {
         transition: .5s;
+        width: 100%;
     }
     &__pict:hover &__img {
         transform: scale(1.1);
@@ -113,5 +122,53 @@
             height: 8px;
             margin: 0 0 0 10px;
         }
+    }
+
+    @include media-breakpoint-down(sm)
+	{
+        &__top {
+            margin: 0 0 25px;
+        }
+        &__panel {
+
+            &-link {
+                height: 40px;
+                width: 40px;
+            }
+            &-icon {
+                height: 14px;
+                width: 14px;
+            }
+        }
+        &__price {
+            height: 35px;
+            padding: 0 10px;
+            font-size: 14px;
+            letter-spacing: 0.7px; 
+        }
+        &__name {
+            font-size: 14px;
+            letter-spacing: 1.4px;
+            margin: 0 0 15px;
+
+            &:after {
+                width: 16px;
+            }
+        }
+        &__text {
+            font-size: 13px;
+            margin: 0 0 10px;
+        }
+        &__more {
+            font-size: 13px;
+
+            &-str {
+                margin: 0 0 0 5px;
+            }
+        }
+    }
+    @include media-breakpoint-only(xs)
+	{
+
     }
 }

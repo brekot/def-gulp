@@ -7,14 +7,14 @@
         margin: 0 -10px;
     }
     &__item {
-        width: 18%;
+        width: 17.5%;
         padding: 0 10px;
         max-width: 270px;
         margin: 0 0 20px;
 
         &_long {
             max-width: 465px;
-            width: 32%;
+            width: 30%;
         }
     }
     &__link {
@@ -36,6 +36,87 @@
         &_active {
             background-color: $color-text;
             color: $color-white;
+        }
+    }
+    &__all {
+        display: none;
+    }
+
+    @include media-breakpoint-only(xl)
+	{
+        &__item {
+            width: 20%;
+        }
+    }
+    @include media-breakpoint-only(lg)
+	{
+        & {
+            margin: 0 0 15px;
+        }
+        &__item {
+            width: 25%;
+        }
+    }
+    @include media-breakpoint-down(md)
+	{
+        & {
+            margin: 0 0 25px;
+        }
+        &__link {
+            font-size: 10px;
+        }
+    }
+    @include media-breakpoint-only(md)
+	{
+        &__item {
+            width: 25%;
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        &__mobile-line {
+            margin: 0 0 35px;
+            height: 1px;
+            background-color: $color-grey6;
+        }
+        &__item {
+            width: 50%;
+            max-width: 50%;
+        }
+        &__all {
+            display: flex;
+            align-items: center;
+            font-size: 13px;
+            font-weight: 600;
+            fill: $color-main;
+
+            &-str {
+                width: 10px;
+                height: 6px;
+                transform: rotate(90deg);
+                margin: 0 0 0 10px;
+            }
+        }
+
+        &:not(&_open) &__item:nth-child(n + 5) {
+            display: none;
+        }
+        &_open &__all-show,
+        &:not(&_open) &__all-hide {
+            display: none;
+        }
+        &_open &__all-str {
+            transform: rotate(270deg);
+        }
+    }
+    @include media-breakpoint-only(xs)
+	{
+        &__items {
+            margin: 0 -7px;
+        }
+        &__item {
+            padding: 0 7px;
+            margin: 0 0 14px;
         }
     }
 }
