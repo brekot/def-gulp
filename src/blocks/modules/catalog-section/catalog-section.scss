@@ -1,0 +1,117 @@
+.catalog-section {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 -15px;
+
+    &__item {
+        width: 50%;
+        padding: 0 15px;
+        margin: 0 0 50px;
+    }
+}
+
+.catalog-item {
+
+    &__top {
+        position: relative;
+        margin: 0 0 30px;
+    }
+    &__pict {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+    }
+    &__img {
+        transition: .5s;
+    }
+    &__pict:hover &__img {
+        transform: scale(1.1);
+    }
+    &__panel {
+        position: absolute;
+        z-index: 2;
+        top: 0;
+        left: 0;
+        display: flex;
+        align-items: center;
+
+        &-link {
+            height: 55px;
+            width: 55px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            background-color: $color-white;
+            fill: $color-black;
+
+            &:hover,
+            &_active {
+                fill: $color-white;
+                background-color: $color-main;
+            }
+        }
+        &-icon {
+            height: 19px;
+            width: 19px;
+        }
+    }
+    &__price {
+        color: $color-main;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 1px;
+        height: 65px;
+        padding: 0 15px;
+        background-color: $color-white;
+        display: flex;
+        align-items: center;
+        position: absolute;
+        z-index: 2;
+        right: 0;
+        bottom: 0;
+    }
+    &__name {
+        color: $color-black;
+        font-size: 20px;
+        font-weight: 600;
+        line-height: 130%;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        position: relative;
+        padding: 0 0 10px;
+        display: inline-block;
+        margin: 0 0 25px;
+
+        &:after {
+            content: "";
+            height: 2px;
+            width: 23px;
+            background-color: $color-main;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__text {
+        color: $color-grey7;
+        font-size: 16px;
+        margin: 0 0 20px;
+    }
+    &__more {
+        font-size: 16px;
+        font-weight: 600;
+        fill: $color-main;
+
+        &:hover {
+            color: $color-black;
+            fill: $color-black;
+        }
+        &-str {
+            width: 15px;
+            height: 8px;
+            margin: 0 0 0 10px;
+        }
+    }
+}

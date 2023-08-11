@@ -1,0 +1,41 @@
+<div class="section-panel">
+    <div class="section-panel__search">
+        <div class="section-panel-search">
+            <form action="">
+                <input type="text" class="section-panel-search__input" value="" placeholder="Поиск по товарам ...">
+                <button type="submit" class="section-panel-search__button">
+                    <svg class="section-panel-search__icon">
+                        <use xlink:href="local/img/sprites/sprite.svg#search"></use>
+                    </svg>
+                </button>
+            </form>
+        </div>
+    </div>
+    <div class="section-panel__sort">
+        <div class="section-panel-sort">
+            <div class="section-panel-sort__title">Сортировать:</div>
+            <div class="section-panel-sort__select select-type">
+                <input type="hidden" name="select" value="pop" class="select-type__input">
+                <button class="select-type__name select-type__button">по популярности</button>
+                <div class="select-type__items">
+                    <button class="select-type__item select-type__button" value="pop">по популярности</button>
+                    <button class="select-type__item select-type__button" value="price">по цене</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="section-panel__type">
+        <div class="section-panel-type">
+            <a href="javascript:;" class="section-panel-type__link section-panel-type__link_active">
+                <svg class="section-panel-type__type-one">
+                    <use xlink:href="local/img/sprites/sprite.svg#type1"></use>
+                </svg>
+            </a>
+            <a href="javascript:;" class="section-panel-type__link">
+                <svg class="section-panel-type__type-two">
+                    <use xlink:href="local/img/sprites/sprite.svg#type2"></use>
+                </svg>
+            </a>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,83 @@
+.pagenavigation {
+    display: flex;
+    align-items: center;
+    margin: 0 0 80px;
+    height: 65px;
+    padding: 0 0 0 230px;
+
+    &__items {
+        display: flex;
+        align-items: center;
+        margin: auto;
+        height: 100%;
+    }
+    &__current,
+    &__link,
+    &__str {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    &__current {
+        width: 65px;
+        color: $color-black;
+        font-size: 18px;
+        border: 2px solid $color-black;
+    }
+    &__link {
+        width: 60px;
+        color: $color-grey7;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__dot {
+        color: $color-grey7;
+        font-size: 16px;
+        font-weight: 400;
+    }
+    &__str {
+        fill: $color-black;
+
+        &:not(&_disable):hover {
+            fill: $color-main;
+        }
+        &_prev {
+            margin: 0 22px 0 0;
+        }
+        &_next {
+            margin: 0 0 0 22px;
+        }
+    }
+    &__icon {
+        width: 20px;
+        height: 10px;
+    }
+    &__str_prev &__icon {
+        transform: rotate(180deg);
+    }
+    &__more {
+        height: 100%;
+        border: 1px solid #000;
+        color: #000;
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 2px;
+        text-transform: uppercase;
+        width: 230px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            border-color: $color-main;
+        }
+        &-icon {
+            margin: 0 0 0 10px;
+            fill: $color-main;
+            width: 12px;
+            height: 6px;
+            transform: rotate(90deg);
+        }
+    }
+}
