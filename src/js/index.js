@@ -15,3 +15,4 @@ import "%modules%/catalog-section-links/catalog-section-links";
 import "%modules%/catalog-filter/catalog-filter";
 import "%modules%/interior-slider/interior-slider";
 import "%modules%/section-panel/section-panel";
+import "%modules%/catalog-element/catalog-element";

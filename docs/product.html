@@ -138,30 +138,32 @@
                 <!-- Без доп класса или .catalog-element__status_in-stock или .catalog-element__status_out-stock -->
                 <div class="catalog-element__status catalog-element__status_in-stock">В наличии</div>
             </div>
-            <div class="catalog-element__top-item">
+            <div class="catalog-element__top-item catalog-element__top-item_last">
                 <div class="catalog-element__top-label">Назначение:</div>
                 <div class="catalog-element__top-value">Для внутренних работ </div>
             </div>
         </div>
         <div class="catalog-element__main">
             <div class="catalog-element__left">
-                <div class="catalog-element__pict">
-                    <img src="local/img/catalog-element/main.png" alt="" class="catalog-element__img">
-                </div>
-                <div class="catalog-element__pict-small">
-                    <img src="local/img/catalog-element/small.png" alt="" class="catalog-element__img-small">
-                </div>
-                <div class="catalog-btn-panel catalog-btn-panel_bottom">
-                    <a href="javascript:;" class="catalog-btn-panel__link">
-                        <svg class="catalog-btn-panel__icon">
-                            <use xlink:href="local/img/sprites/sprite.svg#heart"></use>
-                        </svg>
-                    </a>
-                    <a href="javascript:;" class="catalog-btn-panel__link">
-                        <svg class="catalog-btn-panel__icon">
-                            <use xlink:href="local/img/sprites/sprite.svg#range"></use>
-                        </svg>
-                    </a>
+                <div class="catalog-element__picts">
+                    <div class="catalog-element__pict">
+                        <img src="local/img/catalog-element/main.png" alt="" class="catalog-element__img">
+                    </div>
+                    <div class="catalog-element__pict-small">
+                        <img src="local/img/catalog-element/small.png" alt="" class="catalog-element__img-small">
+                    </div>
+                    <div class="catalog-btn-panel catalog-btn-panel_bottom">
+                        <a href="javascript:;" class="catalog-btn-panel__link">
+                            <svg class="catalog-btn-panel__icon">
+                                <use xlink:href="local/img/sprites/sprite.svg#heart"></use>
+                            </svg>
+                        </a>
+                        <a href="javascript:;" class="catalog-btn-panel__link">
+                            <svg class="catalog-btn-panel__icon">
+                                <use xlink:href="local/img/sprites/sprite.svg#range"></use>
+                            </svg>
+                        </a>
+                    </div>
                 </div>
             </div>
             <div class="catalog-element__center">
@@ -186,7 +188,7 @@
                         <div class="catalog-element-scale__item"></div>
                         <div class="catalog-element-scale__item"></div>
                         <div class="catalog-element-scale__item"></div>
-                        <div class="catalog-element-scale__item catalog-element-scale__item_active">
+                        <div class="catalog-element-scale__item catalog-element-scale__item_active catalog-element-scale__item_active-dark">
                             <div class="catalog-element-scale__text">Глянцевая</div>
                         </div>
                     </div>
@@ -211,21 +213,47 @@
                             </svg>
                         </a>
                     </div>
-                    <button class="btn-two">Рассчитайте необходимый обьем</button>
+                    <button class="catalog-element-consumption__open btn-two">Рассчитайте необходимый обьем</button>
+                    <div class="catalog-element-consumption__body">
+                        <div class="catalog-element-consumption__form">
+                            <form action="">
+                                <div class="catalog-element-consumption__inner form-one">
+                                    <div class="catalog-element-consumption__input">
+                                        <input type="text" class="form-one__input form-one__input_md" value="" placeholder="Введите площадь, м2">
+                                    </div>
+                                    <div class="catalog-element-consumption__btn">
+                                        <button class="btn-three btn-three_full-width">рассчитать</button>
+                                    </div>
+                                </div>
+                            </form>
+                        </div>
+                        <div class="catalog-element-consumption__info">
+                            <div class="catalog-element-consumption__info-label">Для данной площади необходимо:</div>
+                            <div class="catalog-element-consumption__info-value">9 л материала</div>
+                        </div>
+                    </div>
                 </div>
                 <div class="catalog-element-color">
-                    <div class="catalog-element-color__left">
-                        <div class="catalog-element-color__change">LAB 1, 2, 4</div>
+                    <div class="catalog-element-color__inner">
+                        <div class="catalog-element-color__left">
+                            <div class="catalog-element-color__change">LAB 1, 2, 4</div>
+                        </div>
+                        <div class="catalog-element-color__right">
+                            <button class="catalog-element-color__open btn-two">
+                                Выбрать цвет
+                                <a href="javascript:;" class="btn-two__icon question-icon">
+                                    <svg class="question-icon__icon">
+                                        <use xlink:href="local/img/sprites/sprite.svg#question"></use>
+                                    </svg>
+                                </a>
+                            </button>
+                        </div>
                     </div>
-                    <div class="catalog-element-color__right">
-                        <button class="btn-two">
-                            Выбрать цвет
-                            <a href="javascript:;" class="btn-two_icon question-icon">
-                                <svg class="question-icon__icon">
-                                    <use xlink:href="local/img/sprites/sprite.svg#question"></use>
-                                </svg>
-                            </a>
-                        </button>
+                    <div class="catalog-element-color__body">
+                        <div class="catalog-element-color__info">Если вы знаете название веера, цвета:</div>
+                        <a href="javascript:;" class="btn-three btn-three_border">Выбрать из каталога</a>
+                        <div class="catalog-element-color__info">Если вы знаете название веера, цвета:</div>
+                        <a href="javascript:;" class="btn-three btn-three_red">LAB 1, 2, 4</a>
                     </div>
                 </div>
                 <div class="catalog-element-props">

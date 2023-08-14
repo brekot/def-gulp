@@ -10,6 +10,7 @@
     }
     &__top {
         display: flex;
+        flex-wrap: wrap;
         align-items: center;
         margin: 0 0 50px;
 
@@ -17,6 +18,10 @@
             display: flex;
             align-items: center;
             margin: 0 60px 0 0;
+
+            &_last {
+                margin: 0;
+            }
         }
         &-label {
             color: $color-grey4;
@@ -62,9 +67,13 @@
         display: flex;
         justify-content: space-between;
         align-items: flex-start;
+        flex-wrap: wrap;
     }
     &__left {
         width: calc(100% - 765px);
+    }
+    &__picts {
+        max-width: 765px;
         position: relative;
     }
     &__pict {
@@ -105,6 +114,10 @@
 
             &_active {
                 background-color: $color-grey8;
+
+                &-dark {
+                    background-color: $color-text;
+                }
             }
         }
         &__text {
@@ -155,24 +168,53 @@
             display: flex;
             align-items: center;
             margin: 0 0 25px;
+            font-size: 16px;
 
             &-label {
                 color: $color-grey7;
-                font-size: 16px;
             }
             &-value {
                 color: $color-text;
-                font-size: 16px;
                 font-weight: 600;
                 margin: 0 15px 0 10px;
             }
         }
+        &__body {
+            display: none;
+            padding: 20px 0 0;
+        }
+        &__form {
+            margin: 0 0 25px;
+        }
+        &__inner {
+            display: flex;
+        }
+        &__input {
+            width: calc(100% - 170px);
+        }
+        &__btn {
+            width: 170px;
+        }
+        &__info {
+            font-size: 14px;
+            line-height: 125%;
+
+            &-label {
+                color: $color-text;
+            }
+            &-value {
+                color: $color-main;
+                font-weight: 600;
+            }
+        }
     }
     &-color {
-        display: flex;
-        justify-content: space-between;
         margin: 0 0 30px;
 
+        &__inner {
+            display: flex;
+            justify-content: space-between;
+        }
         &__left {
             width: 115px;
         }
@@ -191,9 +233,18 @@
         &__right {
             width: calc(100% - 140px);
         }
+        &__body {
+            padding: 7px 0 0;
+            display: none;
+        }
+        &__info {
+            color: $color-text;
+            font-size: 14px;
+            margin: 25px 0 15px;
+        }
     }
     &-props {
-        margin: 0 0 30px;
+        margin: 0 0 20px;
 
         &__title {
             color: $color-text;
@@ -216,7 +267,7 @@
             height: 60px;
             padding: 0 19px;
             min-width: 60px;
-            margin: 0 5px;
+            margin: 0 5px 10px;
         }
         &__item:hover,
         &__item_active {
@@ -253,6 +304,150 @@
         }
         &__left {
             width: calc(100% - 100px);
+        }
+    }
+
+    @include media-breakpoint-only(xl)
+	{
+        &__pict-small {
+            width: 13vw;
+        }
+    }
+    @include media-breakpoint-only(lg)
+	{
+        &__main {
+            justify-content: flex-start;
+        }
+        &__left {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+        &__center {
+            margin: 0 30px 0 0;
+        }
+    }
+    @include media-breakpoint-only(md)
+	{
+        &__left {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+        &__center,
+        &__right {
+            width: 49%;
+        }
+        &-props__item {
+            padding: 0 15px;
+            min-width: 58px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            margin: -1rem 0 0;
+        }
+        &__desc {
+            font-size: 13px;
+            line-height: 130%;
+        }
+        &__top {
+            font-size: 13px;
+
+            &-item {
+                margin: 0 30px 5px 0;
+
+                &_last {
+                    margin: 0;
+                }
+            }
+            &-label {
+                margin: 0 5px 0 0;
+            }
+            &-value {
+                letter-spacing: .65px;
+            }
+        }
+        &__left {
+            width: 100%;
+            margin: 0 0 40px;
+        }
+        &__pict-small {
+            width: 150px;
+        }
+        &__center {
+            width: 100%;
+        }
+        &-scale {
+            margin: 0 0 50px;
+
+            &__title {
+                font-size: 14px;
+            }
+        }
+        &-prime {
+            display: none;
+        }
+        &__right {
+            width: 100%;
+        }
+        &-consumption {
+            margin: 0 0 30px;
+    
+            &__title {
+                font-size: 14px;
+            }
+            &__inner {
+                flex-direction: column;
+            }
+            &__input,
+            &__btn {
+                width: 100%;
+            }           
+        }
+        &-color {
+
+            &__change {
+                font-size: 11px;
+                height: 60px;
+            }
+            &__right {
+                width: calc(100% - 125px);
+            }
+        }
+        &-props {
+
+            &__title {
+                font-size: 14px;
+            }
+            &__items {
+                margin: 0 -3px;
+            }
+            &__item {
+                font-size: 13px;
+                height: 50px;
+                padding: 0 15px;
+                min-width: 50px;
+                margin: 0 3px 6px;
+            }
+        }
+        &-price {
+
+            &__label {
+                font-size: 12px;
+            }
+            &__value,
+            &__value-from {
+                font-size: 20px;
+            }
+        }
+        &-action {
+
+            &__top {
+                margin: 0 0 20px;
+            }
+            &__left {
+                width: calc(100% - 90px);
+            }
         }
     }
 }

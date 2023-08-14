@@ -107,7 +107,13 @@ a {
     transition: .3s;
 }
 
+a:focus,
+a:active {
+	outline: none;
+}
+
 a:hover {
+	outline: none;
 	color: $color-main;
 	text-decoration: none;
 }
@@ -166,6 +172,12 @@ button:not(:disabled),
 [type="reset"]:not(:disabled),
 [type="submit"]:not(:disabled) {
 	cursor: pointer;
+}
+
+button:hover,
+button:focus,
+button:active {
+	outline: none;
 }
 
 input[type="radio"],
