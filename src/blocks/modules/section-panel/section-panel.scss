@@ -139,6 +139,7 @@
 
     &__button {
         background-color: $color-grey5;
+        color: $color-black;
         height: 65px;
         padding: 0 25px;
         font-size: 12px;
@@ -149,14 +150,12 @@
         width: 100%;
         text-align: left;
         transition: .5s;
+        display: flex;
+        align-items: center;
 
-        &:hover,
-        &:focus,
-        &:active {
-            outline: none;
-        }
         &:hover {
             background-color: $color-grey6;
+            color: $color-black;
         }
     }
     &__name {
