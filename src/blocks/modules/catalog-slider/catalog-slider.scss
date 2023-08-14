@@ -1,0 +1,67 @@
+.catalog-slider {
+    padding: 0 0 95px;
+    position: relative;
+
+    &__title {
+        color: $color-black;
+        font-size: 45px;
+        font-weight: 600;
+        letter-spacing: 4.5px;
+        text-transform: uppercase;
+        margin: 0 0 70px;
+    }
+    &__inner {
+        position: relative;
+    }
+    &__prev,
+    &__next {
+        background-color: $transparent;
+        position: absolute;
+        top: 50%;
+        margin: -20px 0 0;
+    }
+    &__prev {
+        left: -70px;
+    }
+    &__next {
+        right: -70px;
+    }
+
+    @include media-breakpoint-down(xl)
+	{
+        &__prev,
+        &__next {
+            display: none;
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+	{
+        &__title {
+            font-size: 30px;
+            letter-spacing: 2px;
+            margin: 0 0 30px;
+        }
+    }
+    @include media-breakpoint-down(sm)
+	{
+        & {
+            padding: 0 0 20px;
+        }
+        &__title {
+            font-size: 18px;
+            line-height: 140%;
+            letter-spacing: 1.8px;
+            margin: 0 0 35px;
+        }
+        &__wrapper_mobile {
+            flex-wrap: wrap;
+        }
+        &__wrapper_mobile &__slide {
+            margin: 0 0 35px;
+
+            &:nth-child(n + 4) {
+                display: none;
+            }
+        }
+    }
+}

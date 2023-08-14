@@ -1,0 +1,42 @@
+.catalog-element-tabs {
+    padding: 0 0 100px;
+    position: relative;
+
+    &__links {
+        display: table;
+        width: 100%;
+        margin: 0 0 45px;
+    }
+    &__link {
+        color: $bg-main;
+        text-align: center;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        display: table-cell;
+        padding: 0 15px 30px;
+        border-bottom: 2px solid $color-black;
+
+        &:hover,
+        &_active {
+            border-color: $color-main;
+            color: $bg-main;
+        }
+    }
+    &__item {
+        display: none;
+        font-size: 16px;
+
+        &_active {
+            display: block;
+        }
+    }
+
+    @include media-breakpoint-down(md)
+	{
+        & {
+            display: none;
+        }
+    }
+}
