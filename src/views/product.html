@@ -8,8 +8,7 @@
 
     <div class="work-area">
 
-        <!-- .main-block_bg-left - только на этой странице -->
-        <div class="main-block main-block_bg-left js-index-active" data-reverse-header="N">
+        <div class="main-block js-index-active" data-reverse-header="N">
 
             <div class="line-grid">
                 <span class="line-grid__one"></span>
@@ -22,10 +21,6 @@
                 </svg>
                 <svg class="main-block__word-style words-block__word words-block__word_dark words-block__word_style">
                     <use xlink:href="local/img/sprites/sprite.svg#word.style"></use>
-                </svg>
-                <!-- это svg только на этой странице -->
-                <svg class="main-block__word-paint words-block__word words-block__word_dark words-block__word_paint">
-                    <use xlink:href="local/img/sprites/sprite.svg#word.paint"></use>
                 </svg>
             </div>
 
@@ -42,16 +37,20 @@
                     <div class="breadcrumbs">
                         <a href="/" class="breadcrumbs__link">Главная</a>
                         <span class="breadcrumbs__separator">/</span>
-                        <span class="breadcrumbs__current">Каталог</span>
+                        <a href="/" class="breadcrumbs__link">Каталог</a>
+                        <span class="breadcrumbs__separator">/</span>
+                        <a href="/" class="breadcrumbs__link">Краски для интерьеров</a>
+                        <span class="breadcrumbs__separator">/</span>
+                        <span class="breadcrumbs__current">Краска Satin серии CG H&H</span>
                     </div>
 
-                    <h1>Каталог</h1>
+                    <h1>Краска Satin серии CG H&H</h1>
 
                 </div>
 
                 <!-- bitrix header finish -->
 
-                @@include("../blocks/modules/catalog-section-list/catalog-section-list.html")
+                @@include("../blocks/modules/catalog-element/catalog-element.html")
 
                 <!-- bitrix footer start -->
 

@@ -2,6 +2,7 @@
 
 import "./template.js";
 import "./slide.js";
+import "./catalog.count.js";
 
 import "%modules%/index-main/index-main";
 import "%modules%/index-like/index-like";

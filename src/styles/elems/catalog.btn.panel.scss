@@ -1,0 +1,44 @@
+.catalog-btn-panel {
+    position: absolute;
+    z-index: 2;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+
+    &_bottom {
+        top: auto;
+        bottom: 0;
+    }
+    &__link {
+        height: 55px;
+        width: 55px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: $color-white;
+        fill: $color-black;
+
+        &:hover,
+        &_active {
+            fill: $color-white;
+            background-color: $color-main;
+        }
+    }
+    &__icon {
+        height: 19px;
+        width: 19px;
+    }
+
+    @include media-breakpoint-down(sm)
+	{
+        &__link {
+            height: 40px;
+            width: 40px;
+        }
+        &__icon {
+            height: 14px;
+            width: 14px;
+        }
+    }
+}

@@ -1,0 +1,31 @@
+.catalog-count {
+    width: 115px;
+    height: 60px;
+    background-color: $color-grey5;
+    display: flex;
+
+    &__btn {
+        color: $color-main;
+        text-align: center;
+        font-size: 26px;
+        font-weight: 400;
+        height: 100%;
+        width: 40px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+
+        &:hover {
+            background-color: $color-grey6;
+        }
+    }
+    &__input {
+        background-color: $transparent;
+        border: none;
+        color: $color-grey7;
+        text-align: center;
+        font-size: 16px;
+        padding: 0;
+        width: calc(100% - 80px);
+    }
+}

@@ -31,6 +31,13 @@
         color: $color-main;
         border-color: $color-main;
     }
+    &_md {
+        height: 70px;
+    }
+    &_full-width {
+        width: 100%;
+        padding: 0 10px;
+    }
 
     @include media-breakpoint-up(xl)
 	{
@@ -58,4 +65,50 @@
             }
         }
     }
+}
+
+.btn-two {
+    color: $color-text;
+    font-size: 16px;
+    font-weight: 600;
+    border: none;
+    border-bottom: 1px solid $color-black;
+    height: 65px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    text-align: right;
+    padding: 0;
+    background-color: transparent;
+    transition: .5s;
+
+    &:hover {
+        color: $color-main;
+        border-color: $color-main;
+    }
+
+    &_icon {
+        margin: 0 0 0 10px;
+    }
+}
+
+.btn-cart {
+    background-color: $color-main;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    &:hover {
+        background-color: $color-text;
+    }
+    &_lg {
+        height: 70px;
+        width: 70px;
+    }
+    &__icon {
+        height: 22px;
+        width: 22px;
+        stroke: $color-white;
+      }
 }
