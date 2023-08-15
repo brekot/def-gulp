@@ -225,7 +225,8 @@
             background-color: $opacity1;
             fill: $color-white;
 
-            &_user {
+            &_user,
+            &_cart {
                 fill: none;
                 stroke: $color-white;
             }
