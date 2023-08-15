@@ -76,4 +76,11 @@
             height: 10px;
         }
     }
+    @include media-breakpoint-down(sm)
+	{
+        &_mobile-top {
+            bottom: auto;
+            top: 0;
+        }
+    }
 }

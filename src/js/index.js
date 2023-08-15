@@ -1,4 +1,4 @@
-//import { Fancybox } from "@fancyapps/ui";
+import { Fancybox } from "@fancyapps/ui";
 
 import "./template.js";
 import "./slide.js";
@@ -18,3 +18,5 @@ import "%modules%/section-panel/section-panel";
 import "%modules%/catalog-element/catalog-element";
 import "%modules%/catalog-slider/catalog-slider";
 import "%modules%/catalog-element-tabs/catalog-element-tabs";
+import "%modules%/product-page-block1/product-page-block1";
+import "%modules%/product-page-block2/product-page-block2";

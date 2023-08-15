@@ -1,5 +1,5 @@
 @import "../../node_modules/swiper/swiper";
-//@import "../../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
+@import "../../node_modules/@fancyapps/ui/src/Fancybox/Fancybox.scss";
 
 // Переменные, миксины, функции
 @import "helpers/variables";
@@ -28,6 +28,7 @@
 @import "elems/catalog.count";
 @import "elems/form.one";
 @import "elems/catalog.element.info";
+@import "elems/play.btn";
 
 // БЭМ-блоки
 @import "../blocks/modules";

@@ -3,15 +3,6 @@
     background-color: $color-white;
     padding: 100px 0 0;
 
-    &:before {
-        content: "";
-        position: absolute;
-        top: 0;
-        bottom: 0;
-        left: calc(50% + 424px);
-        right: 0;
-        background-color: #FAF9F9;
-    }
     &__point {
 
         &-one {
@@ -19,11 +10,23 @@
             margin: 0 0 0 -848px;
         }
         &-two {
-            margin: 0 0 0 838px;
             top: 570px;
+            margin: 0 0 0 838px;
         }
     }
 
+    @include media-breakpoint-up(xl)
+    {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: calc(50% + 424px);
+            right: 0;
+            background-color: $color-grey5;
+        }
+    }
     @include media-breakpoint-down(lg)
 	{
         & {

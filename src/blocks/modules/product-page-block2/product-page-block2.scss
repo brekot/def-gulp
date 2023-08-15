@@ -1,0 +1,181 @@
+.product-page-block2 {
+    position: relative;
+    background-color: $color-white;
+
+    &__word {
+
+        &-color {
+            transform: translate(-900px, 0);
+            top: 563px;
+          }
+        &-style {
+            transform: translate(785px, 0);
+            top: 73px;
+        }
+    }
+
+    &__inner {
+        padding: 95px 0 85px;
+        position: relative;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left {
+        width: 910px;
+    }
+    &__slider {
+        margin: 0 0 60px;
+    }
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+    &__name {
+        position: relative;
+        color: $bg-main;
+        font-size: 16px;
+        font-weight: 600;
+        letter-spacing: 2.4px;
+        text-transform: uppercase;
+        padding: 0 0 10px;
+
+        &:after {
+            content: "";
+            height: 2px;
+            width: 23px;
+            background-color: $color-main;
+            position: absolute;
+            bottom: 0;
+            left: 0;
+        }
+    }
+    &__right {
+        padding: 0 73px 0 0;
+        position: relative;
+    }
+    &__d {
+        width: 395px;
+        height: 448px;
+    }
+    &__title {
+        color: $color-black;
+        font-size: 45px;
+        font-weight: 600;
+        letter-spacing: 4.5px;
+        text-transform: uppercase;
+        position: absolute;
+        top: 50%;
+        left: -30px;
+        transform: translate(0, -50%);
+    }
+
+    @include media-breakpoint-up(xl)
+    {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: calc(50% - 533px);
+            width: 956px;
+            background-color: $color-grey5;
+        }
+        &__prev,
+        &__next {
+            background-color: $color-grey5;
+        }
+    }
+    @include media-breakpoint-only(xl)
+    {
+        &__left {
+            max-width: calc(100% - 400px);
+        }
+        &__d {
+            width: 300px;
+        }
+        &__title {
+            font-size: 30px;
+        }
+        &__right {
+            padding: 0 0 0 50px;
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+    {
+        &__inner {
+            padding: 50px 0;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+        }
+        &__left {
+            width: 100%;
+            padding: 0;
+            position: relative;
+        }
+        &__d {
+            display: none;
+        }
+        &__title {
+            position: static;
+            transform: none;
+            margin: 0 0 40px;
+            font-size: 26px;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &__inner {
+            padding: 0 0 55px;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column-reverse;
+        }
+        &__left {
+            width: 100%;
+        }
+        &__d {
+            display: none;
+        }
+        &__title {
+            position: static;
+            transform: none;
+            margin: 0 0 40px;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 2px;
+            max-width: 270px;
+        }
+        &__right {
+            width: 100%;
+            padding: 0;
+        }
+        &__slider {
+            margin: 0 0 30px;
+        }
+        &__name {
+            font-size: 12px;
+            letter-spacing: 1.8px;
+        }
+        &__str {
+            left: 0;
+            right: auto;
+            top: 0;
+            bottom: auto;
+        }
+    }
+    @include media-breakpoint-only(xs)
+    {
+        &__slider {
+            margin: 0 -15px 30px;
+        }
+    }
+}

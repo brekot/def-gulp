@@ -12,6 +12,7 @@
 <b>Подключены в JS:</b><br>
 <ul>
     <li>Swiper - для слайдеров (https://swiperjs.com/)</li>
+    <li>Fancybox - для окон (https://fancyapps.com/)</li>
 </ul>
 
 <hr>

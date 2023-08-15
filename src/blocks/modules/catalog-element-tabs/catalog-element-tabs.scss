@@ -33,6 +33,12 @@
         }
     }
 
+    @include media-breakpoint-only(lg)
+    {
+        & {
+            padding: 0 0 50px;
+        }
+    }
     @include media-breakpoint-down(md)
 	{
         & {
