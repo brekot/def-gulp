@@ -1,0 +1,137 @@
+.product-page-block3 {
+    position: relative;
+    overflow: hidden;
+    background-color: $bg-main;
+
+    &__point {
+
+        &-one {
+            bottom: 132px;
+            margin: 0 0 0 -428px;
+        }
+    }
+
+    &__word {
+
+        &-color {
+            top: 173px;
+        }
+        &-style {
+            top: 470px;
+            transform: translate(785px, 0);
+        }
+    }
+
+    &__inner {
+        padding: 85px 0;
+        position: relative;
+        z-index: 1;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    &__left {
+        padding: 0 0 0 50px;
+        position: relative;
+        color: $color-white;
+        font-size: 45px;
+        font-weight: 600;
+        letter-spacing: 4.5px;
+        text-transform: uppercase;
+    }
+    &__right {
+        width: 910px;
+    }
+    &__slide {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        position: relative;
+    }
+
+    @include media-breakpoint-up(xl)
+    {
+        &:before {
+            content: "";
+            position: absolute;
+            top: 0;
+            bottom: 0;
+            left: calc(50% - 750px);
+            width: 1065px;
+            height: 1065px;
+            background: radial-gradient(50% 50% at 50% 50%, $opacity2 0%, $transparent 100%);
+        }
+    }
+    @include media-breakpoint-only(xl)
+    {
+        &__left {
+            padding: 0 0 0 50px;
+            font-size: 30px;
+        }
+        &__right {
+            max-width: calc(100% - 400px);
+        }
+    }
+    @include media-breakpoint-between(md, lg)
+    {
+        &__inner {
+            padding: 75px 0 80px;
+            position: relative;
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        &__left {
+            padding: 0;
+            font-size: 26px;
+            margin: 0 0 45px;
+            text-align: center;
+            width: 100%;
+        }
+        &__right {
+            width: 100%;
+        }
+    }
+    @include media-breakpoint-down(sm)
+    {
+        &:before {
+            content: "";
+            position: absolute;
+            top: -165px;
+            bottom: 0;
+            left: 50%;
+            width: 308px;
+            height: 330px;
+            margin: 0 0 0 -154px;
+            background: radial-gradient(50% 50% at 50% 50%, $opacity2 0%, $transparent 100%);
+        }
+        &__inner {
+            padding: 75px 0 80px;
+            align-items: flex-start;
+            justify-content: space-between;
+            flex-direction: column;
+        }
+        &__left {
+            padding: 0;
+            font-size: 20px;
+            line-height: 140%;
+            letter-spacing: 2px;
+            margin: 0 auto 45px;
+            text-align: center;
+            width: 270px;
+        }
+        &__right {
+            width: 100%;
+        }
+        &__slider {
+            margin: 0 -15px;
+        }
+        &__str {
+            top: 0;
+            bottom: auto;
+            left: 0;
+            right: auto;
+        }
+    }
+}

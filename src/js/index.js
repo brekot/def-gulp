@@ -20,3 +20,4 @@ import "%modules%/catalog-slider/catalog-slider";
 import "%modules%/catalog-element-tabs/catalog-element-tabs";
 import "%modules%/product-page-block1/product-page-block1";
 import "%modules%/product-page-block2/product-page-block2";
+import "%modules%/product-page-block3/product-page-block3";

@@ -159,7 +159,7 @@
             padding: 0;
         }
         &__slider {
-            margin: 0 0 30px;
+            margin: 0 -15px 30px;
         }
         &__name {
             font-size: 12px;
@@ -170,12 +170,6 @@
             right: auto;
             top: 0;
             bottom: auto;
-        }
-    }
-    @include media-breakpoint-only(xs)
-    {
-        &__slider {
-            margin: 0 -15px 30px;
         }
     }
 }
